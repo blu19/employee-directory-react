@@ -3,7 +3,7 @@ import "../style.css";
 
 function EmployeeTables(props){
     return (
-
+        <p>Hello</p>        
     )
 }
 

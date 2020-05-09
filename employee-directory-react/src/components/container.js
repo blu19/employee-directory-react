@@ -4,7 +4,7 @@ import EmployeeTables from "./employeeTables"
 import Search from "./searchList";
 import "../style.css";
 
-class Container extends Component {
+class Container extends React.Component {
 
 }
 
