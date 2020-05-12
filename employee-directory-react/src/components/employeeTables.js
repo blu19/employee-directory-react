@@ -3,10 +3,10 @@ import "../style.css";
 
 function EmployeeTables(props){
     return (
-      <table class="table">
+      <table class="table employeeInfo">
         <thead>
           <tr>
-            <th>Image</th>
+            <th>Photo</th>
             <th>Name</th>
             <th>Phone</th>
             <th>Email</th>
@@ -14,8 +14,15 @@ function EmployeeTables(props){
           </tr>
         </thead>
         <tbody>
+          {/* {this.props.map(result => (
+
+          ))} */}
           <tr>
-            <td><img/> </td>
+            <td>
+              <div className="img-container">
+                {/* <img alt={props.name} src={props.image} /> */}
+              </div>
+            </td>
             <td>John</td>
             <td>78766574</td>
             <td>john@example.com</td>

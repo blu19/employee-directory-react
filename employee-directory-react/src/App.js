@@ -1,11 +1,16 @@
 import React from "react";
-import Container from "./components/container"
+import Container from "./components/Container"
 
 
 function App() {
   return (
-    <Container />
+    <div>
+      <p>in the App</p>
+      <Container></Container>
+    </div>
   );
 }
+
+
 
 export default App;

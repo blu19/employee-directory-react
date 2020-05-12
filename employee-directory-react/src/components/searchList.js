@@ -1,5 +1,5 @@
 import React from "react";
-import API from "../API/API";
+// import API from "../API/API";
 import "../style.css";
 
 //Navbar with search input button
@@ -7,12 +7,12 @@ function SearchList(props){
     return (
       <div className="container-fluid">
         <nav className="navbar navbar-light bg-light justify-content-between">
-          <a className="navbar-brand">
+          {/* <a className="navbar-brand"> */}
             <h2 className="navbarText">Employee Directory</h2>
             <h5 className="navbarMinorText">
               Use the search list box to narrow down your search
             </h5>
-          </a>
+          {/* </a> */}
           <form className="form-inline">
             <input
             //   onChange={someFunction()}
