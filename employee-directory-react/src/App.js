@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "./components/Container"
 
-
 function App() {
   return (
     <div>
@@ -10,7 +9,5 @@ function App() {
     </div>
   );
 }
-
-
 
 export default App;
