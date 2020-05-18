@@ -12,6 +12,8 @@ function SearchList(props) {
           <div>
             <div>
               <input
+                onChange = {props.handleInputChange}
+                value = {props.value}
                 id = "employees"
                 type = "text"
                 name = "search"

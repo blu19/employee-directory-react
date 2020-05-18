@@ -98,6 +98,7 @@ class Container extends React.Component {
               />
               <EmployeeTables
                 results = {this.state.employeeFilter}
+                sortByName = {this.sortByname}
               />
           </div>
       )
