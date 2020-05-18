@@ -5,7 +5,7 @@ import "../style.css";
 function EmployeeTables(props) {
       return (
         <table>
-          <thead>
+          <thead className = "header">
             <tr>
               <th></th>
               <th onClick={props.sortByName}>Name</th>

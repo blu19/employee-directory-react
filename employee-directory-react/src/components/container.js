@@ -6,6 +6,7 @@ import "../style.css";
 
 //setting initial state; starts search as an empty string; 
 //opens empty arrays cause those datas will be in form of arrays;
+
 class Container extends React.Component {
   state = {
     search: '',
@@ -13,6 +14,8 @@ class Container extends React.Component {
     employeeFilter: [],
     order: '',
   };
+
+  
 
   componentDidMount() {
     //initializing what's displayed on the page
@@ -37,13 +40,13 @@ class Container extends React.Component {
       )
       .catch((err) => console.log(err));
   };
-  
+
   //sorting employees by email in asc or desc order
   sortByEmail = () => {
     const theFilter = this.state.employeeFilter;
+    console.log("I was clicked")
     if (this.state.order === 'asc') {
       const theSort = theFilter.sort((a, b) => (a.email > b.email ? 1 : -1));
-      console.log(theSort);
 
       this.setState({
         employeeFilter: theSort,
@@ -51,7 +54,6 @@ class Container extends React.Component {
       });
     } else {
       const theSort = theFilter.sort((a, b) => (a.email > b.email ? -1 : 1));
-      console.log(theSort);
 
       this.setState({
         employeeFilter: theSort,
@@ -67,7 +69,6 @@ class Container extends React.Component {
       const theSort = theFilter.sort((a, b) =>
         a.name.first > b.name.first ? 1 : -1
       );
-      console.log(theSort);
 
       this.setState({
         employeeFilter: theSort,
@@ -77,7 +78,6 @@ class Container extends React.Component {
       const theSort = theFilter.sort((a, b) =>
         a.name.first > b.name.first ? -1 : 1
       );
-      console.log(theSort);
 
       this.setState({
         employeeFilter: theSort,
